@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= @title %></title>
+  <link href="/bootstrap.css" media="screen" rel="stylesheet" type="text/css" media="screen, project" />
+  <style type="text/css">
+      body {
+        padding-top: 50px;
+        padding-bottom: 40px;
+      }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="160">
+  <!--NAVIGATION-->
+  <%= erb :nav %>
+  <div class="container">
+      <!--MAIN CONTENT-->
+      <div>
+      <%= yield %>
+      </div>
+    </div>
+  </div>
+    <!--FOOTER-->
+    <div>
+      <%= erb :footer %>
+    </div>
+  </div>
+</body>
+</html>
