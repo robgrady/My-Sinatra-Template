@@ -10,3 +10,5 @@ get '/' do
   @title= "Sinatra App" 
   erb :home
 end
+
+#while the beanie
